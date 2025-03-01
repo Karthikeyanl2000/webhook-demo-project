@@ -1,0 +1,8 @@
+services:
+  python-app:
+    build: .
+    container_name: hello-container
+    volumes:
+      - ./hello-world.py:/app/mounted/hello-world.py
+    restart: "no"
+  
